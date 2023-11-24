@@ -2,8 +2,8 @@
 import React from "react";
 import { FcGoogle } from "react-icons/fc";
 import { useLocation, useNavigate } from "react-router-dom";
-import Swal from "sweetalert2";
-import useAuth from "../../../hooks/useAuth";
+import useAuth from "../../Hooks/useAuth";
+
 
 
 const SocialLogin = () => {
@@ -22,27 +22,27 @@ const SocialLogin = () => {
             photo: loggedInUser.photoURL,
           };
 
-          fetch("https://traveller-server-one.vercel.app/users", {
-            method: "POST",
-            headers: { "content-type": "application/json" },
-            body: JSON.stringify(saveUser),
-          })
-          .then((res) => res.json())
-          .then((data) => {
-            console.log(data);
-            if (data.insertedId) {
-              Swal.fire({
-                position: "top-end",
-                icon: "success",
-                title: "Your work has been saved",
-                showConfirmButton: false,
-                timer: 1500,
-              });
-              navigate("/");
-            }
-          })
-            navigate(from, {replace: true})
-            console.log(loggedInUser);
+          // fetch("https://traveller-server-one.vercel.app/users", {
+          //   method: "POST",
+          //   headers: { "content-type": "application/json" },
+          //   body: JSON.stringify(saveUser),
+          // })
+          // .then((res) => res.json())
+          // .then((data) => {
+          //   console.log(data);
+          //   if (data.insertedId) {
+          //     Swal.fire({
+          //       position: "top-end",
+          //       icon: "success",
+          //       title: "Your work has been saved",
+          //       showConfirmButton: false,
+          //       timer: 1500,
+          //     });
+          //     navigate("/");
+          //   }
+          // })
+          //   navigate(from, {replace: true})
+          //   console.log(loggedInUser);
         })
     }
 

@@ -2,8 +2,9 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import useAuth from "../../components/Hooks/useAuth";
 import SocialLogin from "../../components/Shared/SocialLogin/SocialLogin";
-import useAuth from "../../hooks/useAuth";
+
 
 const SignUp = () => {
   const {createUser} = useAuth()

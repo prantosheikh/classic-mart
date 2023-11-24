@@ -3,8 +3,9 @@ import { useForm } from "react-hook-form";
 import { BsArrowUpRight } from "react-icons/bs";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import useAuth from "../../components/Hooks/useAuth";
 import Container from "../../components/Shared/Container/Container";
-import useAuth from "../../hooks/useAuth";
+
 
 const Login = () => {
     const {user, signIn} = useAuth()
