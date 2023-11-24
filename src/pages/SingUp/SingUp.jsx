@@ -5,7 +5,6 @@ import Swal from "sweetalert2";
 import SocialLogin from "../../components/Shared/SocialLogin/SocialLogin";
 import useAuth from "../../hooks/useAuth";
 
-
 const SignUp = () => {
   const {createUser} = useAuth()
   const [error, setError] = useState("");
