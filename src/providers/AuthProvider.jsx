@@ -50,6 +50,7 @@ const AuthProvider = ({ children }) => {
         .then(data => console.log(data.data.token))
       }
 
+      
       setLoading(false);
     });
     return () => {
