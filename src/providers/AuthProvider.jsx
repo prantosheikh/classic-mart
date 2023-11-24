@@ -51,9 +51,11 @@ const AuthProvider = ({ children }) => {
       if (currentUser?.email) {
         axios.post("http://localhost:3000/jwt", { email: currentUser.email })
         .then(data => console.log(data.data.token))
-        
+
       }
 
+
+      
 
       setLoading(false);
     });
