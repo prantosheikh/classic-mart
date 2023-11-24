@@ -45,12 +45,16 @@ const AuthProvider = ({ children }) => {
       setUser(currentUser);
       // console.log('current user', currentUser)
 
+
+      // To Do More Secure
+
       if (currentUser?.email) {
         axios.post("http://localhost:3000/jwt", { email: currentUser.email })
         .then(data => console.log(data.data.token))
+        
       }
 
-      
+
       setLoading(false);
     });
     return () => {
