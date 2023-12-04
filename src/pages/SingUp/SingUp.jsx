@@ -146,7 +146,7 @@ const SignUp = () => {
                   <div className="form-control mt-6">
                      <button
                         type="submit"
-                        className="bg-[#b758ce] border rounded-lg w-100  text-white font-semibold py-4"
+                        className="bg-[#1b9f29] border rounded-lg w-100  text-white font-semibold py-4"
                      >
                         Sign Up
                      </button>
@@ -154,7 +154,7 @@ const SignUp = () => {
                   <div className="mt-4">
                      <p className="mb-5">
                         Already member?{" "}
-                        <Link to="/login" className="text-[#b758ce]">
+                        <Link to="/login" className="text-[#1b9f29]">
                            Login here.
                         </Link>
                      </p>

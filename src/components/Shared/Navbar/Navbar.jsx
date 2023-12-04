@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-import Logo from "../../../assets/shopping-bag.png";
+import Logo from "../../../assets/fashion-mart-high-resolution-logo-transparent.png";
 
 
 const Navbar = () => {
@@ -104,7 +104,7 @@ const Navbar = () => {
                   </div>
                </div>
                <Link className="hidden md:block">
-                  <img className="w-14 m-1" src={Logo} alt="Logo" />
+                  <img className="w-52 m-1" src={Logo} alt="Logo" />
                </Link>
             </div>
             {/* <div className="navbar-center hidden lg:flex">
@@ -158,7 +158,7 @@ const Navbar = () => {
 
                   <div className="indicator">
                      {/* <span className="indicator-item badge badge-secondary">new</span> */}
-                     <button className="btn bg-[#b758ce] text-white join-item">Search</button>
+                     <button className="btn bg-[#1b9f29] text-white join-item">Search</button>
                   </div>
                </div>
             </div>
@@ -217,7 +217,7 @@ const Navbar = () => {
                ) : (
                   <Link
                      to="/login"
-                     className="bg-[#b758ce] px-5 md:px-10 py-2 md:py-3 rounded-lg md:font-semibold font-NotoSans primary_button text-white"
+                     className="bg-[#1b9f29] px-5 md:px-10 py-2 md:py-3 rounded-lg md:font-semibold font-NotoSans primary_button text-white"
                   >
                      Login
                   </Link>

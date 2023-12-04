@@ -1,10 +1,11 @@
 import React from 'react';
+import Hero from '../Hero/Hero';
 
 const Home = () => {
    return (
       <div>
          <div className='h-screen mt-24'>
-            <h2>THIS IS HERO SECTION</h2>
+            <Hero />
          </div>
       </div>
    );

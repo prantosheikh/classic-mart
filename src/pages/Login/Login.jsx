@@ -53,7 +53,7 @@ const Login = () => {
 
             <p className="text-base text-gray-700 mt-2">
                Don't have an account?{" "}
-               <Link className="text-[#b758ce]" to="/signup">
+               <Link className="text-[#1b9f29]" to="/signup">
                   {" "}
                   Sign Up!
                </Link>
@@ -117,7 +117,7 @@ const Login = () => {
                   <div className="form-control mt-6">
                      <button
                         type="submit"
-                        className=" flex justify-center items-center gap-2 bg-[#b758ce] border rounded-lg  w-100  text-white font-semibold py-4"
+                        className=" flex justify-center items-center gap-2 bg-[#1b9f29] border rounded-lg  w-100  text-white font-semibold py-4"
                      >
                         Login <BsArrowUpRight className="font-extrabold" />
                      </button>
