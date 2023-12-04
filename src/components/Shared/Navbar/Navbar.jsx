@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { AuthContext } from "../../../Providers/AuthProvider";
-import Logo from "../../../assets/react.svg";
+
+import Logo from "../../../assets/shopping-bag.png";
 
 
 const Navbar = () => {
@@ -10,7 +10,7 @@ const Navbar = () => {
    const [profileOpen, setProfileOpen] = useState(false);
    // const { user, logOut } = useContext(AuthContext);
 
-   const user = true;
+   const user = false;
 
    useEffect(() => {
       const handleScroll = () => {
@@ -34,7 +34,7 @@ const Navbar = () => {
             } duration-500`}
       >
          <div
-            className="navbar max-w-[1280px] mx-auto p-3 md:p-5 2xl:p-0"
+            className="navbar max-w-[1280px] mx-auto p-3 md:p-2 2xl:p-0"
             onClick={() => open && setOpen(false)}
          >
             <div className="navbar-start">
@@ -104,10 +104,10 @@ const Navbar = () => {
                   </div>
                </div>
                <Link className="hidden md:block">
-                  <img className="w-40 m-1" src={Logo} alt="Logo" />
+                  <img className="w-14 m-1" src={Logo} alt="Logo" />
                </Link>
             </div>
-            <div className="navbar-center hidden lg:flex">
+            {/* <div className="navbar-center hidden lg:flex">
                <ul className="flex gap-6 py-4">
                   <li>
                      <Link className="text-lg font-NotoSans group" to="/">
@@ -147,6 +147,20 @@ const Navbar = () => {
                   </li>
 
                </ul>
+            </div> */}
+            <div>
+               <div className="join ">
+                  <div>
+                     <div>
+                        <input className="outline-none input input-bordered join-item" placeholder="Search" />
+                     </div>
+                  </div>
+
+                  <div className="indicator">
+                     {/* <span className="indicator-item badge badge-secondary">new</span> */}
+                     <button className="btn bg-[#b758ce] text-white join-item">Search</button>
+                  </div>
+               </div>
             </div>
             <div className="navbar-end">
                {user ? (
@@ -184,7 +198,7 @@ const Navbar = () => {
                                  className="font-NotoSans group"
                                  to="/dashboard/schedule"
                               >
-                                 Meeting
+
                                  <span className="block max-w-0 group-hover:max-w-full transition-all duration-700 h-1 bg-primary mt-[1px]"></span>
                               </Link>
                            </li>
@@ -203,9 +217,9 @@ const Navbar = () => {
                ) : (
                   <Link
                      to="/login"
-                     className="bg-secondary px-5 md:px-10 py-2 md:py-3 rounded-full md:font-semibold font-NotoSans primary_button text-white"
+                     className="bg-[#b758ce] px-5 md:px-10 py-2 md:py-3 rounded-lg md:font-semibold font-NotoSans primary_button text-white"
                   >
-                     Join a Meeting
+                     Login
                   </Link>
                )}
             </div>
