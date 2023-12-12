@@ -9,8 +9,8 @@ const Home = () => {
 
       <div className='mt-24'>
          <Hero />
-         <BestSellers />
          <Offers />
+         <BestSellers />
       </div>
 
    );

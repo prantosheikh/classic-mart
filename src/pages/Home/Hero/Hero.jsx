@@ -56,7 +56,7 @@ const Hero = () => {
             </div>
          </Swiper>
          <div className='w-[36%]'>
-            <img className='cursor-pointer rounded-lg' src="https://i.ibb.co/5FkhsGD/Orange-Pink-Purple-Soft-Gradients-Gloss-Tech-business-Podcast-Cover-2.png" alt="" />
+            <img className='cursor-pointer rounded-lg border' src="https://i.ibb.co/5FkhsGD/Orange-Pink-Purple-Soft-Gradients-Gloss-Tech-business-Podcast-Cover-2.png" alt="" />
          </div>
 
       </div>
