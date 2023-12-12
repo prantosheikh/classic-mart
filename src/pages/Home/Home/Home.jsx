@@ -1,13 +1,18 @@
 import React from 'react';
 import Hero from '../Hero/Hero';
+import BestSellers from '../BestSellers/BestSellers';
+import Offers from '../Offers/Offers';
+
 
 const Home = () => {
    return (
-      <div>
-         <div className='h-screen mt-24'>
-            <Hero />
-         </div>
+
+      <div className='mt-24'>
+         <Hero />
+         <BestSellers />
+         <Offers />
       </div>
+
    );
 };
 
