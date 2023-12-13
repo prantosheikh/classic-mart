@@ -631,6 +631,9 @@
             "HDR support",
             "Voice remote control"
          ],
+
+         "offer": "AB",
+
          "description": "Enhance your home entertainment with the HomeStudio 4K Smart TV. Immerse yourself in stunning visuals and smart features...",
          "reviews": {
             "average_rating": 4.7,
