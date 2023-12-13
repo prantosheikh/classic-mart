@@ -2,7 +2,7 @@
    {
       "product": {
          "title": "FitPro Sports Smartwatch",
-         "img": "https://ibb.co/LYkywSQ",
+         "img": "https://i.ibb.co/p2Krjh8/111.webp",
          "price": 129.99,
          "features": [
             "Sports and fitness tracking",
@@ -55,16 +55,16 @@
             "color_options": ["Black", "Blue", "Red"]
          },
          "images": [
-            "https://ibb.co/LYkywSQ",
-            "https://ibb.co/0r44Vtf",
-            "https://ibb.co/c867J39"
+            "https://i.ibb.co/p2Krjh8/111.webp",
+            "https://i.ibb.co/m6sS7nk/1111.webp",
+            "https://i.ibb.co/DGBXDZx/CHARCOOL-360x.webp"
          ]
       }
    },
    {
       "product": {
          "title": "TechGear Wireless Earbuds",
-         "img": "https://i.ibb.co/sVMJ6j5/7-92a4e4ec-0229-443d-a803-f9f4f267cc22-540x.webp",
+         "img": "https://i.ibb.co/MNTf2wT/111111.webp",
          "price": 79.99,
          "features": [
             "Bluetooth 5.0",
@@ -117,16 +117,16 @@
             "color_options": ["Black", "White", "Rose Gold"]
          },
          "images": [
-            "https://i.ibb.co/sVMJ6j5/7-92a4e4ec-0229-443d-a803-f9f4f267cc22-540x.webp",
-            "https://i.ibb.co/k85bdyM/73-540x.webp",
-            "https://i.ibb.co/S5Xy9Fr/1.webp"
+            "https://i.ibb.co/p2Krjh8/111.webp",
+            "https://i.ibb.co/m6sS7nk/1111.webp",
+            "https://i.ibb.co/DGBXDZx/CHARCOOL-360x.webp"
          ]
       }
    },
    {
       "product": {
          "title": "ProTech Gaming Laptop",
-         "img": "https://i.ibb.co/NxsZCTr/4.webp",
+         "img": "https://i.ibb.co/MNTf2wT/111111.webp",
          "price": 1499.99,
          "features": [
             "High-performance graphics",
@@ -181,16 +181,16 @@
             "color_options": ["Black", "Silver"]
          },
          "images": [
-            "https://i.ibb.co/NxsZCTr/4.webp",
-            "https://i.ibb.co/3cx0d4f/5.webp",
-            "https://i.ibb.co/ck4XByk/6.webp"
+            "https://i.ibb.co/DGBXDZx/CHARCOOL-360x.webp",
+            "https://i.ibb.co/m6sS7nk/1111.webp",
+            "https://i.ibb.co/p2Krjh8/111.webp"
          ]
       }
    },
    {
       "product": {
          "title": "SmartHome Security Camera System",
-         "img": "https://i.ibb.co/PNFQnCz/7.webp",
+         "img": "https://i.ibb.co/p2Krjh8/111.webp",
          "price": 199.99,
          "features": [
             "1080p HD video",
@@ -244,16 +244,16 @@
             "color_options": ["White", "Black"]
          },
          "images": [
-            "https://i.ibb.co/PNFQnCz/7.webp",
-            "https://i.ibb.co/rbZ0gtc/9.webp",
-            "https://i.ibb.co/VxDNd6d/11.webp"
+            "https://i.ibb.co/p2Krjh8/111.webp",
+            "https://i.ibb.co/m6sS7nk/1111.webp",
+            "https://i.ibb.co/DGBXDZx/CHARCOOL-360x.webp"
          ]
       }
    },
    {
       "product": {
          "title": "UltraBook Pro Laptop",
-         "img": "https://i.ibb.co/Ph6Khky/19.webp",
+         "img": "https://i.ibb.co/DGBXDZx/CHARCOOL-360x.webp",
          "price": 1299.99,
          "features": [
             "Lightweight and portable",
@@ -307,9 +307,9 @@
             "color_options": ["Silver", "Space Gray"]
          },
          "images": [
-            "https://i.ibb.co/dpPzBMv/35-grande.webp",
+            "https://i.ibb.co/DGBXDZx/CHARCOOL-360x.webp",
             "https://i.ibb.co/sVMJ6j5/7-92a4e4ec-0229-443d-a803-f9f4f267cc22-540x.webp",
-            "https://i.ibb.co/Ph6Khky/19.webp"
+            "https://i.ibb.co/MNTf2wT/111111.webp"
          ]
       }
    },

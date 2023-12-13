@@ -1,4 +1,4 @@
-import { data } from 'autoprefixer';
+
 import React, { useEffect, useState } from 'react';
 import Container from '../../../components/Shared/Container/Container';
 import { Link } from 'react-router-dom';
@@ -17,7 +17,7 @@ const Summer = () => {
 
    return (
       <Container>
-         <h2 className='text-2xl my-6'>Offers</h2>
+         <h2 className='text-2xl my-6'>Summer Essentials</h2>
          <div className='grid grid-cols-3 gap-8'>
             {summers?.map(summer => (
                console.log(summer),
