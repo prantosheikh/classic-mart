@@ -561,7 +561,7 @@
    {
       "product": {
          "title": "UltraSound Noise-Canceling Headphones",
-         "img": "https://i.ibb.co/Ph6Khky/19.webp",
+         "img": "https://i.ibb.co/2Kdr4cP/Untitleddesign-2-540x.webp",
          "price": 199.99,
          "features": [
             "Active noise cancellation",
@@ -687,7 +687,7 @@
    {
       "product": {
          "title": "GoTech Portable Bluetooth Speaker",
-         "img": "https://i.ibb.co/dpPzBMv/35-grande.webp",
+         "img": "https://i.ibb.co/jDC0ppZ/44444.webp",
          "price": 49.99,
          "features": [
             "Wireless Bluetooth connectivity",
@@ -739,16 +739,16 @@
             "color_options": ["Black", "Blue", "Red"]
          },
          "images": [
-            "https://i.ibb.co/dpPzBMv/35-grande.webp",
+            "https://i.ibb.co/p2Krjh8/111.webp",
             "https://i.ibb.co/Ph6Khky/19.webp",
-            "https://i.ibb.co/sVMJ6j5/7-92a4e4ec-0229-443d-a803-f9f4f267cc22-540x.webp"
+            "https://i.ibb.co/WDfxdJc/44.webp"
          ]
       }
    },
    {
       "product": {
          "title": "EcoTech Reusable Water Bottle",
-         "img": "https://i.ibb.co/sVMJ6j5/7-92a4e4ec-0229-443d-a803-f9f4f267cc22-540x.webp",
+         "img": "https://i.ibb.co/WDfxdJc/44.webp",
          "price": 19.99,
          "features": [
             "BPA-free material",
@@ -800,16 +800,16 @@
             "color_options": ["Clear", "Blue", "Green"]
          },
          "images": [
-            "https://i.ibb.co/PNFQnCz/7.webp",
-            "https://i.ibb.co/Ph6Khky/19.webp",
-            "https://example.com/ecotech_water_bottle_image3.jpg"
+            "https://i.ibb.co/WDfxdJc/44.webp",
+            "https://i.ibb.co/HNBPgSd/2222.webp",
+            "https://i.ibb.co/MNTf2wT/111111.webp"
          ]
       }
    },
    {
       "product": {
          "title": "ProFit Fitness Resistance Bands",
-         "img": "https://i.ibb.co/dpPzBMv/35-grande.webp",
+         "img": "https://i.ibb.co/3dMHCZJ/4444444.webp",
          "price": 24.99,
          "features": [
             "Set of 5 resistance levels",
@@ -861,13 +861,12 @@
             "color_options": ["Red", "Blue", "Green", "Black", "Yellow"]
          },
          "images": [
-            "https://i.ibb.co/dpPzBMv/35-grande.webp",
-            "https://i.ibb.co/PNFQnCz/7.webpg",
-            "https://i.ibb.co/Ph6Khky/19.webp"
+            "https://i.ibb.co/3dMHCZJ/4444444.webp",
+            "https://i.ibb.co/HNBPgSd/2222.webp",
+            "https://i.ibb.co/MNTf2wT/111111.webp"
          ]
       }
    }
 ]
 
 
-img

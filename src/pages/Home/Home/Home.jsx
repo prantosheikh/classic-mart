@@ -6,6 +6,8 @@ import Summer from '../Summer/Summer';
 import BundleOffer from '../BundleOffer/BundleOffer';
 import SolidPOLO from '../SolidPOLO/SolidPOLO';
 import FullLeeves from '../FullLeeves/FullLeeves';
+import InsideDhaka from '../../InsideDhaka/InsideDhaka';
+import ContactUs from '../../ContactUs/ContactUs';
 
 
 const Home = () => {
@@ -16,9 +18,11 @@ const Home = () => {
          <Offers />
          <BestSellers />
          <Summer />
-         <BundleOffer/>
-         <SolidPOLO/>
-         <FullLeeves/>
+         <BundleOffer />
+         <SolidPOLO />
+         <FullLeeves />
+         <InsideDhaka />
+         <ContactUs/>
       </div>
 
    );
