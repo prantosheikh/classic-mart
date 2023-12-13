@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from '../Hero/Hero';
 import BestSellers from '../BestSellers/BestSellers';
 import Offers from '../Offers/Offers';
+import Summer from '../Summer/Summer';
 
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
          <Hero />
          <Offers />
          <BestSellers />
+         <Summer />
       </div>
 
    );

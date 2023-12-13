@@ -21,10 +21,13 @@ const Offers = () => {
          <div className='grid grid-cols-4 gap-6'>
             {offers?.map(offer => (
                console.log(offer),
-               <Link to={`/collections/${offer.title}`} className='cursor-pointer'>
-                  <img className='scale-100 hover:scale-105 duration-300' key={offer._id} src={offer.image} alt="" />
-                  <h2 className='mt-4 text-base font-semibold text-gray-600 text-center'>{offer.title}</h2>
-               </Link>
+               <div className='group overflow-hidden'>
+                  <Link to={`/collections/${offer.title}`} className='cursor-pointer'>
+                     <img  className="object-cover w-full h-full scale-100 group-hover:scale-110 duration-500" key={offer._id} src={offer.image} alt="" />
+                     <h2 className='mt-4 text-base font-semibold text-gray-600 text-center'>{offer.title}</h2>
+                  </Link>
+               </div>
+
             ))}
          </div>
 
