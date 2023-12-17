@@ -25,7 +25,6 @@ const BundleOffer = () => {
                      <img className="scale-100 w-full group-hover:scale-105 duration-500" key={bundle._id} src={bundle.image} alt="" />
                   </Link>
                </div>
-
             ))}
          </div>
       </Container>

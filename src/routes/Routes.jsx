@@ -5,6 +5,7 @@ import Home from "../pages/Home/Home/Home";
 import Login from "../pages/Login/Login";
 import SignUp from "../pages/SingUp/SingUp";
 import Collections from "../pages/Collections/Collections";
+import Dashboard from "../layout/Dashboard";
 
 export const router = createBrowserRouter([
    {
@@ -34,4 +35,17 @@ export const router = createBrowserRouter([
          },
       ],
    },
+   {
+      path: "/dashboard",
+      element: (
+
+         <Dashboard />
+
+      ),
+      children: [
+         {
+
+         }
+      ]
+   }
 ]);

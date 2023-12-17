@@ -29,7 +29,7 @@ const BestSellers = () => {
                      </figure>
                      <div className="text-center mt-4">
                         <div className='my-6'>
-                        <h2 className="text-base font-semibold text-gray-600">{BestSeller?.product?.title}</h2>
+                           <h2 className="text-base font-semibold text-gray-600">{BestSeller?.product?.title}</h2>
                            <p className='text-gray-800 mt-2'>Tk: {BestSeller?.product?.price}</p>
                         </div>
                         <div className="card-actions justify-end">
