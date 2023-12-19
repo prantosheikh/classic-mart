@@ -1,11 +1,10 @@
-import "tailwindcss/tailwind.css"; // Import Tailwind CSS styles
+import "tailwindcss/tailwind.css";
 import { useState } from "react";
 import { BiAddToQueue } from "react-icons/bi";
-import { IoMdArrowDropdown } from "react-icons/io"
+import { IoMdArrowDropdown } from "react-icons/io";
 import { MdManageHistory } from "react-icons/md";
 import { IoMdArrowDropup } from "react-icons/io";
 import {
-
    FaBookOpen,
    FaBookReader,
    FaRegBookmark,
@@ -31,27 +30,44 @@ const Dashboard = () => {
    const sectionsOne = [
       {
          title: "Product Management",
-         content: ["Product View", "Product View", "Product Details"],
+         content: ["Product Edit", "Product View", "Product Details"],
+      },
+      // Add more sections as needed
+   ];
+   const sectionsTwo = [
+      {
+         title: "Landing Page ",
+         content: ["Landing Page List", "Add Landing Page "],
+      },
+      // Add more sections as needed
+   ];
+   const sectionsThree = [
+      {
+         title: "Category",
+         content: ["Category List", "Add Category"],
+      },
+      // Add more sections as needed
+   ];
+   const sectionsFour = [
+      {
+         title: "Brand",
+         content: ["Brand List", "Add Brand"],
       },
       // Add more sections as needed
    ];
 
 
-
-
    const [activeIndex, setActiveIndex] = useState(null);
 
    const handleClick = (index) => {
-      setActiveIndex(index === activeIndex ? null : index);
+      setActiveIndex((prevIndex) => (index === prevIndex ? null : index));
    };
-   const [activeIndexM, setActiveIndexM] = useState(null);
 
-   const handleClickM = (index) => {
-      setActiveIndexM(index === activeIndexM ? null : index);
-   };
+
+
 
    return (
-      <div className="bg-gray-200 h-screen flex">
+      <div className="bg-gray-200  flex flex-col ">
          <div className="drawer lg:drawer-open">
             <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content flex flex-col items-center justify-center">
@@ -65,7 +81,7 @@ const Dashboard = () => {
             </div>
             <div className="drawer-side border">
                <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
-               <ul className="menu p-4 w-80 h-full bg-white text-base-content">
+               <ul className="menu p-4 w-80 h-screen bg-white text-base-content">
                   <div className="text-center gap-6 mb-6 p-4 rounded-md border-b bg-gradient-to-r from-blue-400 to-purple-500 text-white">
                      <div className="avatar online">
                         <div className="w-20 h-20 rounded-full overflow-hidden">
@@ -83,11 +99,11 @@ const Dashboard = () => {
                               <div key={index} className="text-sm">
                                  <div
                                     className="flex justify-center gap-6 items-center cursor-pointer"
-                                    onClick={() => handleClick(index)}
+                                    onClick={() => handleClick(0)}
                                  >
                                     <div>{section.title}</div>
                                     <div>
-                                       {activeIndex === index ? (
+                                       {activeIndex === 0 ? (
                                           <IoMdArrowDropup className="text-lg" />
                                        ) : (
                                           <IoMdArrowDropdown className="text-lg" />
@@ -97,7 +113,10 @@ const Dashboard = () => {
                                  {activeIndex === index && (
                                     <div className="bg-white text-gray-800 flex items-center gap-4 px-4 w-4/6 mx-auto mt-2 rounded-md p-2 shadow-md">
                                        <MdManageHistory className="text-xl" />
-                                       <Link to={section.content} className="text-blue-500 hover:underline">
+                                       <Link
+                                          to={section.content}
+                                          className="text-blue-500 hover:underline"
+                                       >
                                           {section.content}
                                        </Link>
                                     </div>
@@ -108,63 +127,164 @@ const Dashboard = () => {
                      </div>
                   </div>
 
-
-                  <div className="p-4">
+                  <div className="px-4">
                      <h3 className="text-lg mb-4">Dashboard</h3>
-                     <ul>
+                     <div className="flex flex-col items-start w-full">
                         {isAdmin && (
                            <>
-                              <li>
-                                 <div className="flex items-center">
-                                    <div className="mt-2">
-                                       {sectionsOne.map((section, index) => (
-                                          <div key={index} className="text-sm">
-                                             <div
-                                                className="flex justify-center gap-6 items-center cursor-pointer"
-                                                onClick={() => handleClickM(index)}
-                                             >
-                                                <div>{section.title}</div>
-                                                <div>
-                                                   {activeIndexM === index ? (
-                                                      <IoMdArrowDropup className="text-lg" />
-                                                   ) : (
-                                                      <IoMdArrowDropdown className="text-lg" />
-                                                   )}
-                                                </div>
-                                             </div>
-                                             {activeIndexM === index && (
-                                                <div className=" text-gray-800  mt-2 p-2">
+                              <div className="flex flex-col justify-between items-start">
 
-
-
-                                                   {section.content.map(sections => <div className="flex flex-col items-start ms-4">
-                                                      <Link to={sections} className="hover:bg-gray-100 my-1 py-2 px-5 rounded text-blue-900 ">
-
-                                                         {sections}
-
-                                                      </Link>
-                                                   </div>)}
-
-
-
-
-
-                                                </div>
+                                 {sectionsOne.map((section, index) => (
+                                    <div key={index} className="">
+                                       <div
+                                          className="flex justify-center gap-6 items-center cursor-pointer"
+                                          onClick={() => handleClick(1)}
+                                       >
+                                          <div className="">{section.title}</div>
+                                          <div>
+                                             {activeIndex === 1 ? (
+                                                <IoMdArrowDropup className="text-lg" />
+                                             ) : (
+                                                <IoMdArrowDropdown className="text-lg" />
                                              )}
                                           </div>
-                                       ))}
+                                       </div>
+                                       {activeIndex === 1 && (
+                                          <div className=" text-gray-800 mt-2 p-2">
+                                             {section.content.map((sections, idx) => (
+                                                <div
+                                                   key={idx}
+                                                   className="flex flex-col items-start "
+                                                >
+                                                   <Link
+                                                      to={sections}
+                                                      className="hover:bg-gray-100 mb-1 py-2 px-5 rounded text-gray-900 "
+                                                   >
+                                                      {sections}
+                                                   </Link>
+                                                </div>
+                                             ))}
+                                          </div>
+                                       )}
                                     </div>
-                                 </div>
-                              </li>
-                              <li>
-                                 <NavLink
-                                    to="/dashboard/manageclasses"
-                                    className="flex items-center"
-                                 >
-                                    <FaBookReader className="text-xl text-blue-500 mr-2"></FaBookReader>
-                                    Manage Product
-                                 </NavLink>
-                              </li>
+                                 ))}
+
+                              </div>
+
+                              <div className="my-4">
+
+                                 {sectionsTwo.map((section, index) => (
+                                    <div key={index} className="">
+                                       <div
+                                          className="flex justify-between gap-6 items-center cursor-pointer"
+                                          onClick={() => handleClick(2)}
+                                       >
+                                          <div className="">{section.title}</div>
+                                          <div>
+                                             {activeIndex === 2 ? (
+                                                <IoMdArrowDropup className="text-lg" />
+                                             ) : (
+                                                <IoMdArrowDropdown className="text-lg" />
+                                             )}
+                                          </div>
+                                       </div>
+                                       {activeIndex === 2 && (
+                                          <div className=" text-gray-800 mt-2 p-2">
+                                             {section.content.map((sections, idx) => (
+                                                <div
+                                                   key={idx}
+                                                   className="flex flex-col items-start "
+                                                >
+                                                   <Link
+                                                      to={sections}
+                                                      className="hover:bg-gray-100 mb-1 py-2 px-5 rounded text-gray-900 "
+                                                   >
+                                                      {sections}
+                                                   </Link>
+                                                </div>
+                                             ))}
+                                          </div>
+                                       )}
+                                    </div>
+                                 ))}
+
+                              </div>
+                              {/* Catogory  */}
+                              <div className="my-4">
+                                 {sectionsThree.map((section, index) => (
+                                    <div key={index} className="">
+                                       <div
+                                          className="flex justify-between gap-6 items-center cursor-pointer"
+                                          onClick={() => handleClick(3)}
+                                       >
+                                          <div className="">{section.title}</div>
+                                          <div>
+                                             {activeIndex === 3 ? (
+                                                <IoMdArrowDropup className="text-lg" />
+                                             ) : (
+                                                <IoMdArrowDropdown className="text-lg" />
+                                             )}
+                                          </div>
+                                       </div>
+                                       {activeIndex === 3 && (
+                                          <div className=" text-gray-800 mt-2 p-2">
+                                             {section.content.map((sections, idx) => (
+                                                <div
+                                                   key={idx}
+                                                   className="flex flex-col items-start "
+                                                >
+                                                   <Link
+                                                      to={sections}
+                                                      className="hover:bg-gray-100 mb-1 py-2 px-5 rounded text-gray-900 "
+                                                   >
+                                                      {sections}
+                                                   </Link>
+                                                </div>
+                                             ))}
+                                          </div>
+                                       )}
+                                    </div>
+                                 ))}
+
+                              </div>
+                              {/* Brand  */}
+                              <div className="">
+                                 {sectionsFour.map((section, index) => (
+                                    <div key={index} className="">
+                                       <div
+                                          className="flex justify-between gap-6 items-center cursor-pointer"
+                                          onClick={() => handleClick(4)}
+                                       >
+                                          <div className="">{section.title}</div>
+                                          <div>
+                                             {activeIndex === 4 ? (
+                                                <IoMdArrowDropup className="text-lg" />
+                                             ) : (
+                                                <IoMdArrowDropdown className="text-lg" />
+                                             )}
+                                          </div>
+                                       </div>
+                                       {activeIndex === 4 && (
+                                          <div className=" text-gray-800 mt-2 p-2">
+                                             {section.content.map((sections, idx) => (
+                                                <div
+                                                   key={idx}
+                                                   className="flex flex-col items-start "
+                                                >
+                                                   <Link
+                                                      to={sections}
+                                                      className="hover:bg-gray-100 mb-1 py-2 px-5 rounded text-gray-900 "
+                                                   >
+                                                      {sections}
+                                                   </Link>
+                                                </div>
+                                             ))}
+                                          </div>
+                                       )}
+                                    </div>
+                                 ))}
+
+                              </div>
                               <li>
                                  <NavLink
                                     to="/dashboard/allusers"
@@ -177,66 +297,10 @@ const Dashboard = () => {
                            </>
                         )}
 
-                        {isInstructor && (
-                           <>
-                              <li>
-                                 <NavLink to="/" className="flex items-center">
-                                    <FcHome className="text-xl mr-2"></FcHome> Instructor Home
-                                 </NavLink>
-                              </li>
-                              <li>
-                                 <NavLink
-                                    to="/dashboard/addclasses"
-                                    className="flex items-center"
-                                 >
-                                    <BiAddToQueue className="text-xl text-purple-500 mr-2"></BiAddToQueue>
-                                    Add Classes
-                                 </NavLink>
-                              </li>
-                              <li>
-                                 <NavLink
-                                    to="/dashboard/myclasses"
-                                    className="flex items-center"
-                                 >
-                                    <FcGallery className="text-xl text-purple-500 mr-2"></FcGallery>
-                                    My Classes
-                                 </NavLink>
-                              </li>
-                           </>
-                        )}
 
-                        {isStudent && (
-                           <>
-                              <li>
-                                 <NavLink
-                                    to="/dashboard/selecedclass"
-                                    className="flex items-center"
-                                 >
-                                    <FaRegBookmark className="text-xl text-green-500 mr-2"></FaRegBookmark>
-                                    Selected Classes
-                                 </NavLink>
-                              </li>
-                              <li>
-                                 <NavLink
-                                    to="/dashboard/enrolled"
-                                    className="flex items-center"
-                                 >
-                                    <FaBookOpen className="text-xl text-purple-600 mr-2"></FaBookOpen>
-                                    Enrolled Classes
-                                 </NavLink>
-                              </li>
-                              <li>
-                                 <NavLink
-                                    to="/dashboard/paymentmethod"
-                                    className="flex items-center"
-                                 >
-                                    <FaWallet className="text-xl text-yellow-400 mr-2"></FaWallet>{" "}
-                                    Payment
-                                 </NavLink>
-                              </li>
-                           </>
-                        )}
-                     </ul>
+
+
+                     </div>
                   </div>
                </ul>
             </div>
