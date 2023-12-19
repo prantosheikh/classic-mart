@@ -210,7 +210,7 @@ const Dashboard = () => {
 
                               </div>
                               {/* Catogory  */}
-                              <div className="my-4">
+                              <div className="">
                                  {sectionsThree.map((section, index) => (
                                     <div key={index} className="">
                                        <div
