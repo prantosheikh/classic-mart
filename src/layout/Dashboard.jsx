@@ -27,24 +27,38 @@ const Dashboard = () => {
       // Add more sections as needed
    ];
 
-   const sectionsOne = [
+   const productManagement = [
       {
          title: "Product Management",
          content: ["Product Edit", "Product View", "Product Details"],
       },
       // Add more sections as needed
    ];
-   const sectionsTwo = [
+   const landingPage = [
       {
          title: "Landing Page ",
          content: ["Landing Page List", "Add Landing Page "],
       },
       // Add more sections as needed
    ];
-   const sectionsThree = [
+   const category = [
       {
          title: "Category",
          content: ["Category List", "Add Category"],
+      },
+      // Add more sections as needed
+   ];
+   const brand = [
+      {
+         title: "Brand",
+         content: ["Brand List", "Add Brand"],
+      },
+      // Add more sections as needed
+   ];
+   const pages = [
+      {
+         title: "Pages",
+         content: ["Page List", "Add Page"],
       },
       // Add more sections as needed
    ];
@@ -134,7 +148,7 @@ const Dashboard = () => {
                            <>
                               <div className="flex flex-col justify-between items-start">
 
-                                 {sectionsOne.map((section, index) => (
+                                 {productManagement.map((section, index) => (
                                     <div key={index} className="">
                                        <div
                                           className="flex justify-center gap-6 items-center cursor-pointer"
@@ -173,7 +187,7 @@ const Dashboard = () => {
 
                               <div className="my-4">
 
-                                 {sectionsTwo.map((section, index) => (
+                                 {landingPage.map((section, index) => (
                                     <div key={index} className="">
                                        <div
                                           className="flex justify-between gap-6 items-center cursor-pointer"
@@ -211,7 +225,7 @@ const Dashboard = () => {
                               </div>
                               {/* Catogory  */}
                               <div className="">
-                                 {sectionsThree.map((section, index) => (
+                                 {category.map((section, index) => (
                                     <div key={index} className="">
                                        <div
                                           className="flex justify-between gap-6 items-center cursor-pointer"
@@ -249,7 +263,7 @@ const Dashboard = () => {
                               </div>
                               {/* Brand  */}
                               <div className="my-4">
-                                 {sectionsFour.map((section, index) => (
+                                 {brand.map((section, index) => (
                                     <div key={index} className="">
                                        <div
                                           className="flex justify-between gap-6 items-center cursor-pointer"
@@ -265,6 +279,43 @@ const Dashboard = () => {
                                           </div>
                                        </div>
                                        {activeIndex === 4 && (
+                                          <div className=" text-gray-800 mt-2 p-2">
+                                             {section.content.map((sections, idx) => (
+                                                <div
+                                                   key={idx}
+                                                   className="flex flex-col items-start "
+                                                >
+                                                   <Link
+                                                      to={sections}
+                                                      className="hover:bg-gray-100 mb-1 py-2 px-5 rounded text-gray-900 "
+                                                   >
+                                                      {sections}
+                                                   </Link>
+                                                </div>
+                                             ))}
+                                          </div>
+                                       )}
+                                    </div>
+                                 ))}
+
+                              </div>
+                              <div className="my-4">
+                                 {pages.map((section, index) => (
+                                    <div key={index} className="">
+                                       <div
+                                          className="flex justify-between gap-6 items-center cursor-pointer"
+                                          onClick={() => handleClick(5)}
+                                       >
+                                          <div className="">{section.title}</div>
+                                          <div>
+                                             {activeIndex === 5 ? (
+                                                <IoMdArrowDropup className="text-lg" />
+                                             ) : (
+                                                <IoMdArrowDropdown className="text-lg" />
+                                             )}
+                                          </div>
+                                       </div>
+                                       {activeIndex === 5 && (
                                           <div className=" text-gray-800 mt-2 p-2">
                                              {section.content.map((sections, idx) => (
                                                 <div
