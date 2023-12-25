@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import useAuth from "../../components/Hooks/useAuth";
 import SocialLogin from "../../components/Shared/SocialLogin/SocialLogin";
-import Accordion from "../Accordion";
+
 
 
 const SignUp = () => {
@@ -162,7 +162,7 @@ const SignUp = () => {
                   </div>
                </form>
                <SocialLogin></SocialLogin>
-               <Accordion/>
+
             </div>
 
 

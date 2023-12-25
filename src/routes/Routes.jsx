@@ -6,6 +6,7 @@ import Login from "../pages/Login/Login";
 import SignUp from "../pages/SingUp/SingUp";
 import Collections from "../pages/Collections/Collections";
 import Dashboard from "../layout/Dashboard";
+import AddProduct from "../pages/Dashboard/AddProduct/AddProduct";
 
 export const router = createBrowserRouter([
    {
@@ -36,16 +37,20 @@ export const router = createBrowserRouter([
       ],
    },
    {
-      path: "/dashboard",
+      path: "dashboard",
       element: (
 
-         <Dashboard />
+         <Dashboard></Dashboard>
 
       ),
       children: [
          {
+            path: "add product",
+            element: (
+               <AddProduct />
+            ),
+         },
 
-         }
-      ]
-   }
+      ],
+   },
 ]);
