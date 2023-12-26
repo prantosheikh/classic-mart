@@ -42,3 +42,6 @@ button {
 	font-size: var(--normal-font-size);
 }
 
+.dotted-element {
+   outline: 2px dotted #000; /* You can adjust the width and color as needed */
+ }
