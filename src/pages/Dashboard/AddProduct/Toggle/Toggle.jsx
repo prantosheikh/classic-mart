@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 // import FaqSection from "./FaqSection";
 // import Price from "./Price";
 import Container from "../../../../components/Shared/Container/Container";
+import AddProductForm from "../../AddProductForm/AddProductForm";
 
 function PricingToggle() {
 	const [isMonthly, setIsMonthly] = useState(true);
@@ -45,7 +46,7 @@ function PricingToggle() {
 	return (
 		<Container>
 			<div className="mt-[40px]">
-				<div className="flex justify-center w-10/12 lg:w-[40%]  rounded  lg:gap-4 py-4  bg-[#E0E4FC]">
+				<div className="flex justify-center w-10/12 lg:w-[30%]  rounded  lg:gap-4 py-4  bg-[#E0E4FC]">
 					<button
 						className={`${
 							isMonthly ? "bg-[#6B7CFF] text-white" : ""
@@ -69,9 +70,17 @@ function PricingToggle() {
 
 				<div className=" w-full mt-10">
 					{isMonthly ? (
-						<div className="p-6 border h-screen">hi</div>
+						<div className="p-6 border h-screen">
+							<h1>
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Doloribus cumque aliquid eum
+								ut numquam expedita ea quidem veniam alias iste!
+							</h1>
+						</div>
 					) : (
-						<div className="p-6 border">hello</div>
+						<div className="p-6 border">
+							<AddProductForm />
+						</div>
 					)}
 				</div>
 			</div>
