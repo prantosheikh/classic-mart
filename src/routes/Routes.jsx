@@ -6,46 +6,44 @@ import Login from "../pages/Login/Login";
 import SignUp from "../pages/SingUp/SingUp";
 import Collections from "../pages/Collections/Collections";
 import Dashboard from "../layout/Dashboard";
+import AddProduct from "../pages/Dashboard/AddProduct/AddProduct";
 
 export const router = createBrowserRouter([
-   {
-      path: "/",
-      element: <Main />,
-      children: [
-         {
-            path: "/",
-            element: <Home />,
-         },
+	{
+		path: "/",
+		element: <Main />,
+		children: [
+			{
+				path: "/",
+				element: <Home />,
+			},
 
-         {
-            path: "/signup",
-            element: <SignUp />,
-         },
-         {
-            path: "/login",
-            element: <Login />,
-         },
-         {
-            path: "/about",
-            element: <AboutUs />,
-         },
-         {
-            path: "/collections/:id",
-            element: <Collections />,
-         },
-      ],
-   },
-   {
-      path: "/dashboard",
-      element: (
-
-         <Dashboard />
-
-      ),
-      children: [
-         {
-
-         }
-      ]
-   }
+			{
+				path: "/signup",
+				element: <SignUp />,
+			},
+			{
+				path: "/login",
+				element: <Login />,
+			},
+			{
+				path: "/about",
+				element: <AboutUs />,
+			},
+			{
+				path: "/collections/:id",
+				element: <Collections />,
+			},
+		],
+	},
+	{
+		path: "dashboard",
+		element: <Dashboard></Dashboard>,
+		children: [
+			{
+				path: "addproduct",
+				element: <AddProduct></AddProduct>,
+			},
+		],
+	},
 ]);
