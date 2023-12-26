@@ -6,6 +6,7 @@ import useAuth from "../../components/Hooks/useAuth";
 import SocialLogin from "../../components/Shared/SocialLogin/SocialLogin";
 
 
+
 const SignUp = () => {
    const { createUser } = useAuth()
    const [error, setError] = useState("");
@@ -161,6 +162,7 @@ const SignUp = () => {
                   </div>
                </form>
                <SocialLogin></SocialLogin>
+
             </div>
 
 
