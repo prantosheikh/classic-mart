@@ -2,6 +2,8 @@ import { BsThreeDots } from "react-icons/bs";
 import Container from "../../../components/Shared/Container/Container";
 import { FaRegQuestionCircle } from "react-icons/fa";
 import Test from "../../Test.jsx";
+import AddProductForm from "../AddProductForm/AddProductForm.jsx";
+import Toggle from "./Toggle/Toggle.jsx";
 const AddClasses = () => {
 	return (
 		<Container>
@@ -29,13 +31,13 @@ const AddClasses = () => {
 						<button className="rounded-sm py-1 px-3 border hover:border-[#030857]">
 							Setup Default
 						</button>
-						<button className="rounded-sm py-1 px-3 border hover:border-[#030857]">
-							<BsThreeDots />
+						<button className="rounded-sm  py-1 px-3 border hover:border-[#030857]">
+							<BsThreeDots className="text-xl" />
 						</button>
 					</div>
 				</div>
 			</div>
-			<Test />
+			<Toggle />
 		</Container>
 	);
 };
