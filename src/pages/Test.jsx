@@ -5,7 +5,7 @@ import { useDropzone } from 'react-dropzone';
 const ImageUploader = () => {
    const { control, handleSubmit } = useForm();
 
-   const onDrop = (acceptedFiles) => {
+    const onDrop = (acceptedFiles) => {
       // Handle the dropped files here
       console.log(acceptedFiles);
    };

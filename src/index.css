@@ -10,30 +10,29 @@
 
 /* Track */
 ::-webkit-scrollbar {
-   width: 6px;
- }
- 
- /* Handle */
- ::-webkit-scrollbar-thumb {
-   background-color: #adadad;
-   border-radius: 6px;
- }
- 
- /* Handle on hover */
- ::-webkit-scrollbar-thumb:hover {
-   background-color: #555;
- }
- 
- /* Track */
- ::-webkit-scrollbar-track {
-   background-color: #f1f1f1;
- }
- 
- /* Handle when it's dragged */
- ::-webkit-scrollbar-thumb:active {
-   background-color: #555;
- }
- 
+	width: 6px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background-color: #adadad;
+	border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background-color: #555;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background-color: #f1f1f1;
+}
+
+/* Handle when it's dragged */
+::-webkit-scrollbar-thumb:active {
+	background-color: #555;
+}
 
 body,
 input,
@@ -43,5 +42,5 @@ button {
 }
 
 .dotted-element {
-   outline: 2px dotted #000; /* You can adjust the width and color as needed */
- }
+	outline: 2px dotted #cecece; /* You can adjust the width and color as needed */
+}
