@@ -43,4 +43,5 @@ button {
 
 .dotted-element {
 	outline: 2px dotted #cecece; /* You can adjust the width and color as needed */
+	outline-width: 0.3cqb;
 }
