@@ -48,7 +48,7 @@ const AddProductForm = () => {
 	console.log(filesTwo);
 	const [filesThree, setFilesThree] = useState([]);
 
-	const onSubmit = async (data, filesTwo) => {
+	const onSubmit = async (data) => {
 		console.log("DATA", data, files[0].name);
 		// Form Data
 		const brand = data.brand.label;
@@ -60,24 +60,60 @@ const AddProductForm = () => {
 		console.log(newProdduct);
 
 		// Append other form data fields
-		const formData = new FormData();
+		// const formData = new FormData();
 
-		formData.append("image", data.img[0]);
-		console.log("flee", formData);
+		// formData.append("image", data.img[0]);
+		// console.log("flee", formData);
+		// fetch(img_hosting_url, {
+		// 	method: "POST",
+		// 	body: formData,
+		// })
+		// 	.then((res) => res.json())
+		// 	.then((imageRespose) => console.log(imageRespose));
+
+		const formDataOne = new FormData();
+		formDataOne.append("imageTwo", files[0]);
+		console.log("formDataOne", formDataOne);
+
 		fetch(img_hosting_url, {
 			method: "POST",
-			body: formData,
+			body: formDataOne,
+		})
+			.then((res) => res.json())
+			.then((imageResponse) => {
+				if (imageResponse.success) {
+					console.log(
+						"Image uploaded successfully:",
+						imageResponse.data
+					);
+				} else {
+					console.error("Image upload failed:", imageResponse.error);
+				}
+			})
+			.catch((error) =>
+				console.error("Error during image upload:", error)
+			);
+
+		const formDataTwo = new FormData();
+		console.log("formDataTwo", formDataTwo);
+
+		formDataTwo.append("imageTwo", filesTwo[0]);
+
+		fetch(img_hosting_url, {
+			method: "POST",
+			body: formDataTwo,
 		})
 			.then((res) => res.json())
 			.then((imageRespose) => console.log(imageRespose));
 
-		const formDataTwo = new FormData();
+		const formDataThree = new FormData();
+		console.log("formDataThree", formDataThree);
 
-		formDataTwo.append("image", files[0]);
-		console.log("flee", formDataTwo);
+		formDataTwo.append("imageThree", filesThree[0]);
+
 		fetch(img_hosting_url, {
 			method: "POST",
-			body: formDataTwo,
+			body: formDataThree,
 		})
 			.then((res) => res.json())
 			.then((imageRespose) => console.log(imageRespose));
@@ -424,7 +460,6 @@ const AddProductForm = () => {
 										)}
 									</div>
 
-									<input {...register("img")} type="file" />
 									{/* File Three */}
 									<div className="flex justify-center items-center dotted-element p-2 w-30 h-40">
 										<section className="container  ">
