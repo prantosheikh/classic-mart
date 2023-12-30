@@ -55,6 +55,14 @@ const AddProductForm = () => {
       const product = data.product;
       const newProduct = { brand, category, gender, size, product };
 
+
+
+
+
+
+
+
+
       // IMAGE HOSTING ONE
       const formData = new FormData();
       formData.append("image", files[0]);
